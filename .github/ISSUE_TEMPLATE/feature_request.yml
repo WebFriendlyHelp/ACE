@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest an improvement to ACE
+title: "[FEATURE] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement to ACE.
+
+        Please do not paste message content or personal details from your backup. Issues are public.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Request type
+      options:
+        - Accessibility or screen reader improvement
+        - Keyboard navigation improvement
+        - Reading or navigating conversations
+        - Calls, voicemail, or attachments
+        - Exporting
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or frustration this would help with.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help
+      description: Describe the change you would like to see.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues first.
+          required: true
